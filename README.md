@@ -8,11 +8,12 @@
 
 1. Free eBook order autoconfirm
 
-## Install (to be updated)
-1. [openuserjs.org - Amazon Kindle Edition eBook free order autoconfirm](https://openuserjs.org/scripts/nataliastanko/)
+## Install
+1. [openuserjs.org - Amazon Kindle Edition eBook free order autoconfirm](https://openuserjs.org/scripts/nataliastanko/Amazon_Kindle_Edition_eBook_free_order_autoconfirm)
 
 ## Changelog
 * 29-Aug-2018 Project starts
+* 7-Sep-2018 Works with sale
 
 ## License
 

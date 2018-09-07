@@ -5,7 +5,7 @@
 // @namespace    https://github.com/nataliastanko/
 // @contactURL   https://nataliastanko.com
 // @author       nataliastanko
-// @version      0.1
+// @version      0.2
 // @license      MIT
 // @copyright    2018, nataliastanko (https://github.com/nataliastanko/)
 // @match        https://*amazon.*/*/dp/*
@@ -34,12 +34,15 @@
             if (document.getElementById('CombinedBuybox')) {
               const amazonBuybox = document.getElementById('buybox');
               if (amazonBuybox) {
-                const amazonKindlePrice = amazonBuybox.querySelector('.kindle-price');
-                if (amazonKindlePrice) {
-                  const price = amazonBuybox.querySelector('.a-color-price').innerText;
+                if (amazonBuybox.querySelector('.kindle-price')) {
+
+                  let price = document.querySelector('.a-color-price:not(.ebooks-price-savings)');
+                  price = price.childNodes[0].textContent.trim();
+
                   if (!(price == '£0.00')) {
                     throw new Error("Nothing to buy for free.");
                   }
+
                   document.getElementById('buyOneClick').submit();
                 }
               }
